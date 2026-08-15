@@ -239,7 +239,7 @@ function renderProjects(){
       const acts = el("div", "pj-actions");
       p.actions.forEach(a => {
         const btn = el("a", "btn " + (a.primary ? "btn-primary" : "btn-ghost") + " btn-sm", esc(a.text));
-        const url = a.useGameUrl ? window.resume.gameUrl : a.url;
+        const url = a.url || p.playUrl || window.resume.gameUrl;
         if (url){ btn.href = url; btn.target = "_blank"; btn.rel = "noopener"; }
         acts.appendChild(btn);
       });
