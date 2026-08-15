@@ -50,13 +50,28 @@ window.resume = {
       name: "坦克大战 · 网页小游戏",
       tag: "原创项目",
       tech: "HTML5 Canvas / JavaScript / 碰撞检测 / WebAudio",
+      playUrl: "https://ranchunxu.github.io/tank-battle/",
       points: [
         "用原生 JavaScript + Canvas 独立完成经典坦克大战玩法：玩家操控坦克移动射击、敌方坦克 AI 追击、砖墙与基地碰撞、波次通关与胜负判定。",
         "地图中央用砖墙拼出个人姓名缩写「RCX」作为身份标识，四周绘制校园场景原创底图，程序化生成音效与特效。",
         "支持响应式布局与移动端虚拟按键，最高分本地记录。已部署上线，可在线试玩。"
       ],
       actions: [
-        { text: "在线试玩", url: "", useGameUrl: true, primary: true }
+        { text: "在线试玩", url: "", primary: true }
+      ]
+    },
+    {
+      name: "星际猎手 · 飞机大战",
+      tag: "原创项目",
+      tech: "HTML5 Canvas / JavaScript / Roguelike 升级 / Boss 战",
+      playUrl: "https://ranchunxu.github.io/plane-battle/",
+      points: [
+        "独立完成的竖版弹幕射击游戏：4 大 Boss × 3 阶段、5 种武器 × 5 级升级、25 张升级卡、8 种敌机、无尽波次模式。",
+        "赛博朋克霓虹科技风，全部画面与程序化音效零素材生成，单文件交付、零依赖。",
+        "支持键盘 / 鼠标 / 触屏操作，本地排行榜记录最高分。已部署上线，可在线试玩。"
+      ],
+      actions: [
+        { text: "在线试玩", url: "", primary: true }
       ]
     }
   ],
