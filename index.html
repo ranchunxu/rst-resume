@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#050b14">
+<meta name="description" content="冉淳旭 · 上海理工大学 电子信息大类 · AI 技能认证 ×9 · RST 竞赛在线简历">
+<meta name="keywords" content="冉淳旭,上海理工大学,电子信息大类,在线简历,AI技能认证,RCX">
+<title>冉淳旭 · 电子电路风在线简历</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 全页背景：电路网格 + 荧光光晕（装饰层） -->
+<div class="page-bg" aria-hidden="true"></div>
+
+<!-- ================= 顶部导航 ================= -->
+<header id="topbar">
+  <a class="brand" href="#hero">冉淳<em>旭</em><span class="brand-sub">RCX</span></a>
+  <nav class="nav-links" id="navLinks" aria-label="主导航"></nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeBtn" title="切换深浅色" aria-label="切换深浅色"></button>
+    <button class="icon-btn" id="printBtn" title="打印 / 导出 PDF" aria-label="打印 / 导出 PDF">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menuBtn" title="菜单" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ================= Hero 主视觉 ================= -->
+  <section id="hero">
+    <!-- 程序化 PCB 电路走线（SVG，由 main.js 生成）+ 网格 -->
+    <svg class="hero-circuit" id="heroCircuit" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- 个人照片：圆形发光相框 + 扫描线动效 -->
+      <div class="avatar-wrap">
+        <div class="avatar-ring">
+          <img src="assets/photo.webp" alt="冉淳旭个人照片" width="640" height="853">
+        </div>
+        <span class="scanline" aria-hidden="true"></span>
+        <span class="avatar-tag">RCX · 2026</span>
+      </div>
+
+      <div class="hero-main">
+        <div class="hero-kicker"><span>PERSONAL RESUME</span><i></i><span>RST CAMP · 2026</span></div>
+        <h1 class="hero-name">冉淳<em>旭</em></h1>
+        <div class="hero-type"><span id="typeText"></span><i class="caret" aria-hidden="true"></i></div>
+        <p class="hero-intro" id="heroIntro"></p>
+        <div class="hero-badges" id="heroBadges"></div>
+        <div class="hero-actions" id="heroActions"></div>
+      </div>
+    </div>
+
+    <!-- 角落装饰 -->
+    <div class="hero-corner hero-corner--tl" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="hero-corner hero-corner--br" aria-hidden="true">RST-2026</div>
+  </section>
+
+  <!-- ================= 核心亮点 ================= -->
+  <section id="highlights">
+    <div class="sec-head">
+      <span class="sec-idx">01</span>
+      <h2>核心亮点</h2>
+      <span class="sec-tag">HIGHLIGHTS</span>
+    </div>
+    <hr class="sec-rule">
+    <div class="hl-grid" id="hlGrid"></div>
+  </section>
+
+  <!-- ================= 项目经历 ================= -->
+  <section id="projects">
+    <div class="sec-head">
+      <span class="sec-idx">02</span>
+      <h2>项目经历</h2>
+      <span class="sec-tag">PROJECTS</span>
+    </div>
+    <hr class="sec-rule">
+    <div id="projectGrid"></div>
+  </section>
+
+  <!-- ================= 实践经历 ================= -->
+  <section id="experience">
+    <div class="sec-head">
+      <span class="sec-idx">03</span>
+      <h2>实践经历</h2>
+      <span class="sec-tag">EXPERIENCE</span>
+    </div>
+    <hr class="sec-rule">
+    <div id="expList"></div>
+  </section>
+
+  <!-- ================= 专业技能 ================= -->
+  <section id="skills">
+    <div class="sec-head">
+      <span class="sec-idx">04</span>
+      <h2>专业技能</h2>
+      <span class="sec-tag">SKILLS</span>
+    </div>
+    <hr class="sec-rule">
+    <p class="sec-sub">熟练度为自我评估，持续成长中</p>
+    <div class="skill-grid" id="skillGrid"></div>
+  </section>
+
+  <!-- ================= 教育背景 ================= -->
+  <section id="education">
+    <div class="sec-head">
+      <span class="sec-idx">05</span>
+      <h2>教育背景</h2>
+      <span class="sec-tag">EDUCATION</span>
+    </div>
+    <hr class="sec-rule">
+    <div id="eduList"></div>
+  </section>
+
+  <!-- ================= 兴趣特长 ================= -->
+  <section id="interests">
+    <div class="sec-head">
+      <span class="sec-idx">06</span>
+      <h2>兴趣特长</h2>
+      <span class="sec-tag">INTERESTS</span>
+    </div>
+    <hr class="sec-rule">
+    <p class="sec-sub">课堂之外，保持热爱与好奇</p>
+    <div class="interest-grid" id="interestGrid"></div>
+  </section>
+
+  <!-- ================= 获奖与证书 ================= -->
+  <section id="certificates">
+    <div class="sec-head">
+      <span class="sec-idx">07</span>
+      <h2>获奖与证书</h2>
+      <span class="sec-tag">CERTIFICATES</span>
+    </div>
+    <hr class="sec-rule">
+    <p class="sec-sub">AI 技能认证 · 点击证书可放大查看</p>
+    <div id="certList"></div>
+    <div class="gallery" id="certGallery"></div>
+  </section>
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer>
+  <div class="f-inner">
+    <div class="f-sign">RCX</div>
+    <div id="footerCopy"></div>
+    <div id="footerTime"></div>
+    <div class="f-link" id="footerLink"></div>
+  </div>
+</footer>
+
+<!-- 返回顶部 -->
+<button id="backTop" aria-label="返回顶部" title="返回顶部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- 证书灯箱 -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="证书大图">
+  <img id="lbImg" alt="证书放大图">
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<!-- 轻提示 -->
+<div id="toast" role="status"></div>
+
+<script src="js/resume-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
