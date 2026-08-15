@@ -37,10 +37,21 @@
     <div class="hero-grid" aria-hidden="true"></div>
 
     <div class="hero-inner">
-      <!-- 个人照片：圆形发光相框 + 扫描线动效 -->
+      <!-- 个人标识：RCX 电路芯片徽章 + 扫描线动效 -->
       <div class="avatar-wrap">
         <div class="avatar-ring">
-          <img src="assets/photo.webp" alt="冉淳旭个人照片" width="640" height="853">
+          <svg class="avatar-svg" viewBox="0 0 100 100" aria-hidden="true">
+            <path class="em-tr" d="M12 50 H38"/>
+            <path class="em-tr" d="M62 50 H88"/>
+            <path class="em-tr" d="M50 12 V38"/>
+            <path class="em-tr" d="M50 62 V88"/>
+            <circle class="em-nd" cx="12" cy="50" r="3"/>
+            <circle class="em-nd" cx="88" cy="50" r="3"/>
+            <circle class="em-nd" cx="50" cy="12" r="3"/>
+            <circle class="em-nd" cx="50" cy="88" r="3"/>
+            <rect class="em-chip" x="27" y="27" width="46" height="46" rx="7"/>
+            <text class="em-txt" x="50" y="56">RCX</text>
+          </svg>
         </div>
         <span class="scanline" aria-hidden="true"></span>
         <span class="avatar-tag">RCX · 2026</span>
